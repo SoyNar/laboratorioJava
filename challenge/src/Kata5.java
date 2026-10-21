@@ -54,5 +54,6 @@ public class Kata5 {
 
         } while (option != 6);
 
+        ConsoleScanner.close();
     }
 }

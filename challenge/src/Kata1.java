@@ -38,5 +38,6 @@ public class Kata1 {
             System.out.println("Propina muy baja");
 
         }
+        ConsoleScanner.close();
     }
 }

@@ -49,5 +49,8 @@ public class Kata6 {
         System.out.println("Total de clientes: " + totalClients);
         System.out.println("Promedio por hora: " + String.format(Locale.US, "%.2f", average));
         System.out.println("Hora con más clientes: " + peakHour + " (" + maxClients + " clientes)");
+
+        ConsoleScanner.close();
     }
+
 }

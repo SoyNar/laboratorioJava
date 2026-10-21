@@ -42,6 +42,7 @@ public class Kata3 {
             System.out.println("Total a pagar: $" + String.format("%.0f", totalWithIva));
 
         }
+        ConsoleScanner.close();
 
 
         }

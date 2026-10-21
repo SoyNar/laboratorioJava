@@ -45,7 +45,7 @@ public class Kata4 {
        System.out.println(mesagge);
        System.out.println(schedule);
 
-
+    ConsoleScanner.close();
 
    }
 
