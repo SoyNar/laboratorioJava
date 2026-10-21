@@ -7,14 +7,17 @@ public class Kata6 {
         int hoursCount = 0;
         int peakHour = -1;
         int maxClients = -1;
+        int hour;
 
-        int hour = ConsoleScanner.readInt("Ingresa la hora (0-23, -1 para terminar)");
+        do {
+            hour = ConsoleScanner.readInt("Ingresa la hora (0-23, -1 para terminar)");
 
-        while (hour != -1) {
+            if (hour == -1) {
+                break;
+            }
 
             if (hour < 0 || hour > 23) {
                 System.out.println("Hora inválida");
-                hour = ConsoleScanner.readInt("Ingresa la hora (0-23, -1 para terminar)");
                 continue;
             }
 
@@ -22,7 +25,6 @@ public class Kata6 {
 
             if (clients < 0) {
                 System.out.println("Número de clientes inválido");
-                hour = ConsoleScanner.readInt("Ingresa la hora (0-23, -1 para terminar)");
                 continue;
             }
 
@@ -34,8 +36,7 @@ public class Kata6 {
                 peakHour = hour;
             }
 
-            hour = ConsoleScanner.readInt("Ingresa la hora (0-23, -1 para terminar)");
-        }
+        } while (hour != -1);
 
         if (hoursCount == 0) {
             System.out.println("No se ingresaron datos");
